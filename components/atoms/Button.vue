@@ -24,10 +24,6 @@ button {
     line-height: 1;
     transition: .3s;
 
-    span {
-      padding: 2px 0 0 0;
-    }
-
     &:hover {
       background: $primary-hover;
     }
