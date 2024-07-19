@@ -9,7 +9,7 @@
   </header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 header {
   display: flex;
   width: 100%;
@@ -19,7 +19,8 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  h1 {
+  h1,
+  h1 a {
     font-size: 12px;
     font-weight: 700;
     line-height: 1.6;
