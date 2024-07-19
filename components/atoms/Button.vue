@@ -9,7 +9,7 @@
   </button>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 button {
   a {
     display: flex;
