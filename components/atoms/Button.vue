@@ -19,9 +19,6 @@ button {
     gap: 8px;
     border-radius: 28px;
     background: $primary;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1;
     transition: .3s;
 
     &:hover {
