@@ -6,6 +6,8 @@
         わたしの実用ヒント
       </NuxtLink>
     </h1>
+
+    <MoleculesGlobalNavigation />
   </header>
 </template>
 

@@ -10,12 +10,15 @@ body {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  font-style: normal;
   font-weight: 500;
   word-break: break-word;
   color: $bark-blue100;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-width: $screen-sm;
 }
 
 ul,
@@ -50,7 +53,8 @@ button {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   margin: 0;
   padding: 0;
 }
