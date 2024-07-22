@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h1>
+  <main>
+    <section>
       おなかの不調？
-    </h1>
-  </div>
+    </section>
+  </main>
 </template>
