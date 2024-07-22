@@ -37,7 +37,7 @@
       </div>
     </section>
 
-    <section class="fucyo">
+    <section id="fucyo" class="fucyo">
       <div class="fucyo__content">
         <div class="text">
           <h2>
@@ -155,6 +155,8 @@
   padding: 0px 40px 40px 40px;
   flex-direction: column;
   background: $secondary;
+  position: relative;
+  z-index: 3;
 
   &__content {
     display: flex;
@@ -211,13 +213,14 @@
 
 .fucyo {
   display: flex;
-  padding: 80px 40px;
+  margin: -80px 0 0 0;
+  padding: 160px 40px 80px;
   justify-content: center;
   align-items: center;
   gap: 80px;
   background: $gray;
   position: relative;
-  z-index: 1; // 他のセクションよりも前面に表示
+  z-index: 2;
 
   &__content {
     width: 100%;
@@ -251,11 +254,12 @@
 .hint {
   display: flex;
   margin: -80px 0 0 0;
-  padding: 80px 40px;
+  padding: 160px 40px 80px;
   flex-direction: column;
   align-items: center;
   background: $secondary;
   position: relative;
+  z-index: 1;
 
   &__content {
     width: 100%;
@@ -264,7 +268,6 @@
     flex-direction: column;
     align-items: center;
     gap: 80px;
-    padding: 80px 0 0 0;
 
     .title {
       display: flex;
@@ -330,7 +333,7 @@
 .about {
   display: flex;
   margin: -80px 0 0 0;
-  padding: 80px 40px;
+  padding: 160px 40px 80px;
   flex-direction: column;
   align-items: center;
   gap: 56px;
@@ -343,7 +346,6 @@
     flex-direction: column;
     align-items: center;
     gap: 56px;
-    padding: 80px 0 0 0;
 
     .title {
       display: flex;

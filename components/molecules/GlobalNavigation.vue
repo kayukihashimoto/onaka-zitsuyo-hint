@@ -2,7 +2,7 @@
   <nav>
     <ul>
       <li>
-        <NuxtLink to="/fucyo">おなかの不調？</NuxtLink>
+        <NuxtLink to="/#fucyo">おなかの不調？</NuxtLink>
       </li>
       <li>
         <NuxtLink to="/#hint">不調と向き合うわたしの実用ヒント</NuxtLink>
