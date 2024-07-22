@@ -217,6 +217,7 @@
   gap: 80px;
   background: $gray;
   position: relative;
+  z-index: 1; // 他のセクションよりも前面に表示
 
   &__content {
     width: 100%;
