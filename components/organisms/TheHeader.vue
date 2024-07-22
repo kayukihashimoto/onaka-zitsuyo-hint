@@ -40,7 +40,7 @@ header {
   position: sticky;
   top: 0;
   transition: .3s;
-  z-index: 2; // ヘッダーを最前面に表示
+  z-index: 4; // ヘッダーを最前面に表示
 
   h1 {
     font-size: 12px;
