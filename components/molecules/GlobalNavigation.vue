@@ -2,13 +2,13 @@
   <nav>
     <ul>
       <li>
-        <NuxtLink to="/">おなかの不調？</NuxtLink>
+        <NuxtLink to="/fucyo">おなかの不調？</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/">不調と向き合うわたしの実用ヒント</NuxtLink>
+        <NuxtLink to="/#hint">不調と向き合うわたしの実用ヒント</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/">このサイトについて</NuxtLink>
+        <NuxtLink to="/#about">このサイトについて</NuxtLink>
       </li>
     </ul>
   </nav>
@@ -18,7 +18,6 @@
 ul {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
   gap: 8px;
 
   li {
@@ -26,10 +25,12 @@ ul {
       display: flex;
       padding: 10px 8px;
       justify-content: flex-end;
-      align-items: flex-start;
       font-size: 14px;
-      font-weight: 700;
-      line-height: 1;
+      transition: .3s;
+
+      &:hover {
+        opacity: .56;
+      }
     }
   }
 }

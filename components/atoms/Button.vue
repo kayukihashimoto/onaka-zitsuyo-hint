@@ -1,8 +1,21 @@
+<script setup lang="ts">
+const props = defineProps({
+  to: {
+    type: String,
+    default: '/',
+  },
+  label: {
+    type: String,
+    default: '続きを読む',
+  }
+});
+</script>
+
 <template>
   <button>
-    <NuxtLink to="/onaka-fucyo">
+    <NuxtLink :to="props.to">
       <span>
-        続きを読む
+        {{ props.label }}
       </span>
       <AtomsArrowRight />
     </NuxtLink>

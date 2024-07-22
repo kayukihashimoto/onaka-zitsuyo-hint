@@ -3,5 +3,7 @@
     <OrganismsTheHeader />
 
     <slot />
+
+    <OrganismsTheFooter />
   </div>
 </template>
