@@ -92,7 +92,7 @@
     background: $white;
 
     @media screen and (max-width: $screen-sm) {
-      padding: 56px 24px;
+      padding: 56px 24px 0;
       gap: 24px;
     }
 

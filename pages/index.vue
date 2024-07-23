@@ -171,6 +171,7 @@
     align-content: center;
     gap: 32px 0px;
     flex-direction: column;
+    border-radius: 16px;
     background: $white;
 
     @media screen and (max-width: $screen-sm) {
@@ -485,7 +486,7 @@
       ul li {
         font-size: 10px;
         list-style-type: disc;
-        margin: 0 0 0 1em;
+        margin: 0 0 0 1.5em;
 
         a {
           font-size: 10px;
