@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useHead({
+  title: '自分に合う食べ物を知る - おなかの不調と向き合うわたしの実用ヒント',
+})
+</script>
+
 <template>
   <main>
     <section class="kv">
