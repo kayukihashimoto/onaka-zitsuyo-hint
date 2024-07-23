@@ -11,13 +11,13 @@
           </div>
           <div class="images__item--main">
             <span>
-              食事をすると下痢をする
+              食事をすると<br class="is-sp">下痢をする
             </span>
             <img src="@/assets/images/geri.png" width="200">
           </div>
           <div class="images__item">
             <span>
-              おなかがゴロゴロしてる
+              おなかが<br class="is-sp">ゴロゴロしてる
             </span>
             <img src="@/assets/images/gorogoro.png" width="160">
           </div>
@@ -29,9 +29,9 @@
         </h1>
         <p>
           みんなと同じ食事をしているのに自分だけおなかの調子がよくない。<br>
-          食物アレルギーの検査をしても問題ない。おなかの不調が気になって、せっかくの食事を楽しめない。 <br><br>
+          食物アレルギーの検査をしても問題ない。<br class="is-sp">おなかの不調が気になって、せっかくの食事を楽しめない。 <br><br>
 
-          このページに訪れたあなたも、もしかするとおなかの不調に悩んでいるのかもしれません。<br>
+          このページに訪れたあなたも、<br class="is-sp">もしかするとおなかの不調に悩んでいるのかもしれません。<br>
           おなかの不調を見逃さず、まずは自分のからだを見つめ直してみませんか？
         </p>
       </div>
@@ -41,7 +41,7 @@
       <div class="fucyo__content">
         <div class="text">
           <h2>
-            おなかの不調
+            おなかの不調？
           </h2>
 
           <p>
@@ -70,40 +70,36 @@
           </p>
         </div>
 
-        <section class="food">
-          <div class="food__content">
-            <div class="text">
-              <h3>
-                自分に合う食べ物を知る
-              </h3>
+        <section class="hint-item">
+          <div class="text">
+            <h3>
+              自分に合う食べ物を知る
+            </h3>
 
-              <p>
-                おなかの不調をきっかけに、自分に合う食べ物を見つけるために食事記録をはじめました。毎日の食べ物とおなかの調子を記録しながら、自分に合う・合わない食べ物を見つける実用的なヒントを紹介します。
-              </p>
+            <p>
+              おなかの不調をきっかけに、自分に合う食べ物を見つけるために食事記録をはじめました。毎日の食べ物とおなかの調子を記録しながら、自分に合う・合わない食べ物を見つける実用的なヒントを紹介します。
+            </p>
 
-              <AtomsButton to="/food" label="実用ヒントをくわしく見る" />
-            </div>
-
-            <img src="@/assets/images/food.png" width="360">
+            <AtomsButton to="/food" label="実用ヒントをくわしく見る" />
           </div>
+
+          <img src="@/assets/images/food.png" width="360">
         </section>
 
-        <section class="care">
-          <div class="care__content">
-            <div class="text">
-              <h3>
-                こころのケアをする
-              </h3>
+        <section class="hint-item--reverse">
+          <div class="text">
+            <h3>
+              こころのケアをする
+            </h3>
 
-              <p>
-                おなかの不調がこころの健康にも影響することを体験し、「こころのケア」を生活に取り入れました。適切な医療処置とアドバイスを受け、無理をしないことや薬を活用することで、外出先での食事を楽しむ方法を紹介します。
-              </p>
+            <p>
+              おなかの不調がこころの健康にも影響することを体験し、「こころのケア」を生活に取り入れました。適切な医療処置とアドバイスを受け、無理をしないことや薬を活用することで、外出先での食事を楽しむ方法を紹介します。
+            </p>
 
-              <AtomsButton to="/care" label="実用ヒントをくわしく見る" />
-            </div>
-
-            <img src="@/assets/images/care.png" width="360">
+            <AtomsButton to="/care" label="実用ヒントをくわしく見る" />
           </div>
+
+          <img src="@/assets/images/care.png" width="360">
         </section>
       </div>
     </section>
@@ -151,7 +147,6 @@
 <style lang="scss" scoped>
 .kv {
   display: flex;
-  height: 720px;
   padding: 0px 40px 40px 40px;
   flex-direction: column;
   background: $secondary;
@@ -160,12 +155,11 @@
 
   &__content {
     display: flex;
-    padding: 24px 0px;
+    padding: 56px 40px;
     justify-content: center;
     align-items: center;
     align-content: center;
     gap: 32px 0px;
-    flex: 1 0 0;
     flex-direction: column;
     background: $white;
 
@@ -184,7 +178,7 @@
         span {
           text-align: center;
           font-weight: 900;
-          line-height: 1;
+          line-height: 1.4;
           letter-spacing: .03em;
         }
 
@@ -202,6 +196,7 @@
       text-align: center;
       font-size: 40px;
       line-height: 1.5;
+      font-weight: 900;
     }
 
     p {
@@ -232,21 +227,33 @@
     border-radius: 16px;
     background: $white;
 
+    @media screen and (max-width: $screen-sm) {
+      gap: 24px;
+    }
+
     .text {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 24px;
-      flex: 1 0 0;
 
       h2 {
-        text-align: center;
         font-size: 32px;
       }
 
       p {
         margin: 0 0 8px 0;
       }
+    }
+  }
+
+
+
+  img {
+    width: 360px;
+
+    @media screen and (max-width: $screen-sm) {
+      width: 40%;
     }
   }
 }
@@ -276,7 +283,6 @@
       gap: 24px;
 
       h2 {
-        text-align: center;
         font-size: 32px;
       }
 
@@ -285,45 +291,44 @@
       }
     }
 
-    .food,
-    .care {
+    .hint-item {
       display: flex;
-      flex-direction: column;
+      width: 100%;
+      padding: 60px;
       align-items: center;
-      gap: 80px;
+      gap: 60px;
+      border-radius: 16px;
+      background: $white;
 
-      &__content {
+      @media screen and (max-width: $screen-sm) {
+        gap: 24px;
+      }
+
+      .text {
         display: flex;
-        width: 1000px;
-        padding: 60px;
-        align-items: center;
-        gap: 60px;
-        border-radius: 16px;
-        background: $white;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
 
-        .text {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 24px;
-          flex: 1 0 0;
+        h3 {
+          font-size: 24px;
+        }
 
-          h3 {
-            text-align: center;
-            font-size: 24px;
-          }
-
-          p {
-            margin: 0 0 8px 0;
-            text-align: left;
-          }
+        p {
+          margin: 0 0 8px 0;
         }
       }
-    }
 
-    .care {
+      img {
+        width: 360px;
 
-      &__content {
+        @media screen and (max-width: $screen-sm) {
+          width: 40%;
+        }
+      }
+
+      &--reverse {
+        @extend .hint-item;
         flex-direction: row-reverse;
       }
     }
@@ -354,7 +359,6 @@
       gap: 24px;
 
       h2 {
-        text-align: center;
         font-size: 24px;
         line-height: 1;
       }
@@ -389,7 +393,6 @@
           font-size: 10px;
           color: $link;
           font-weight: 500;
-
 
           svg {
             margin: 0 0 -4px;

@@ -47,6 +47,7 @@ header {
 
     a {
       font-size: 12px;
+      line-height: 1.7;
       transition: .3s;
 
       &:hover {
