@@ -41,7 +41,7 @@
       <div class="fucyo__content">
         <div class="text">
           <h2>
-            おなかの不調
+            おなかの不調？
           </h2>
 
           <p>
@@ -70,40 +70,36 @@
           </p>
         </div>
 
-        <section class="food">
-          <div class="food__content">
-            <div class="text">
-              <h3>
-                自分に合う食べ物を知る
-              </h3>
+        <section class="hint-item">
+          <div class="text">
+            <h3>
+              自分に合う食べ物を知る
+            </h3>
 
-              <p>
-                おなかの不調をきっかけに、自分に合う食べ物を見つけるために食事記録をはじめました。毎日の食べ物とおなかの調子を記録しながら、自分に合う・合わない食べ物を見つける実用的なヒントを紹介します。
-              </p>
+            <p>
+              おなかの不調をきっかけに、自分に合う食べ物を見つけるために食事記録をはじめました。毎日の食べ物とおなかの調子を記録しながら、自分に合う・合わない食べ物を見つける実用的なヒントを紹介します。
+            </p>
 
-              <AtomsButton to="/food" label="実用ヒントをくわしく見る" />
-            </div>
-
-            <img src="@/assets/images/food.png" width="360">
+            <AtomsButton to="/food" label="実用ヒントをくわしく見る" />
           </div>
+
+          <img src="@/assets/images/food.png" width="360">
         </section>
 
-        <section class="care">
-          <div class="care__content">
-            <div class="text">
-              <h3>
-                こころのケアをする
-              </h3>
+        <section class="hint-item--reverse">
+          <div class="text">
+            <h3>
+              こころのケアをする
+            </h3>
 
-              <p>
-                おなかの不調がこころの健康にも影響することを体験し、「こころのケア」を生活に取り入れました。適切な医療処置とアドバイスを受け、無理をしないことや薬を活用することで、外出先での食事を楽しむ方法を紹介します。
-              </p>
+            <p>
+              おなかの不調がこころの健康にも影響することを体験し、「こころのケア」を生活に取り入れました。適切な医療処置とアドバイスを受け、無理をしないことや薬を活用することで、外出先での食事を楽しむ方法を紹介します。
+            </p>
 
-              <AtomsButton to="/care" label="実用ヒントをくわしく見る" />
-            </div>
-
-            <img src="@/assets/images/care.png" width="360">
+            <AtomsButton to="/care" label="実用ヒントをくわしく見る" />
           </div>
+
+          <img src="@/assets/images/care.png" width="360">
         </section>
       </div>
     </section>
@@ -160,7 +156,7 @@
 
   &__content {
     display: flex;
-    padding: 24px 0px;
+    padding: 24px 40px;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -240,7 +236,6 @@
       flex: 1 0 0;
 
       h2 {
-        text-align: center;
         font-size: 32px;
       }
 
@@ -276,7 +271,6 @@
       gap: 24px;
 
       h2 {
-        text-align: center;
         font-size: 32px;
       }
 
@@ -285,45 +279,33 @@
       }
     }
 
-    .food,
-    .care {
+    .hint-item {
       display: flex;
-      flex-direction: column;
+      width: 100%;
+      padding: 60px;
       align-items: center;
-      gap: 80px;
+      gap: 60px;
+      border-radius: 16px;
+      background: $white;
 
-      &__content {
+      .text {
         display: flex;
-        width: 1000px;
-        padding: 60px;
-        align-items: center;
-        gap: 60px;
-        border-radius: 16px;
-        background: $white;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        flex: 1 0 0;
 
-        .text {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 24px;
-          flex: 1 0 0;
+        h3 {
+          font-size: 24px;
+        }
 
-          h3 {
-            text-align: center;
-            font-size: 24px;
-          }
-
-          p {
-            margin: 0 0 8px 0;
-            text-align: left;
-          }
+        p {
+          margin: 0 0 8px 0;
         }
       }
-    }
 
-    .care {
-
-      &__content {
+      &--reverse {
+        @extend .hint-item;
         flex-direction: row-reverse;
       }
     }
@@ -354,7 +336,6 @@
       gap: 24px;
 
       h2 {
-        text-align: center;
         font-size: 24px;
         line-height: 1;
       }
