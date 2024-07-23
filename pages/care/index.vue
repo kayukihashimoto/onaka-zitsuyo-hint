@@ -156,10 +156,6 @@
           text-align: center;
         }
       }
-
-      p {
-        margin: 0 0 8px 0;
-      }
     }
 
     img {
@@ -185,7 +181,7 @@
   background: $gray;
 
   @media screen and (max-width: $screen-sm) {
-    padding: 80px 16px;
+    padding: 40px 16px;
   }
 
   &__content {
@@ -207,8 +203,7 @@
 
       @media screen and (max-width: $screen-sm) {
         width: 100%;
-        padding: 80px 16px;
-        align-items: center;
+        padding: 40px 24px;
       }
 
       .title {

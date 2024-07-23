@@ -110,10 +110,6 @@
       h2 {
         font-size: 32px;
       }
-
-      p {
-        margin: 0 0 8px 0;
-      }
     }
 
     img {
@@ -139,7 +135,7 @@
   background: $gray;
 
   @media screen and (max-width: $screen-sm) {
-    padding: 80px 16px;
+    padding: 40px 16px;
   }
 
   &__content {
@@ -149,6 +145,10 @@
     flex-direction: column;
     align-items: center;
     gap: 80px;
+
+    @media screen and (max-width: $screen-sm) {
+      gap: 40px;
+    }
 
     .fucyo-item {
       display: flex;
@@ -160,7 +160,7 @@
       background: $white;
 
       @media screen and (max-width: $screen-sm) {
-        padding: 60px 24px;
+        padding: 40px 24px;
         gap: 24px;
       }
 
