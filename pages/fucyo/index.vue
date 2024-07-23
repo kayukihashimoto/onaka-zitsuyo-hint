@@ -81,12 +81,15 @@
     border-radius: 16px;
     background: $white;
 
+    @media screen and (max-width: $screen-sm) {
+      gap: 24px;
+    }
+
     .text {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 24px;
-      flex: 1 0 0;
       font-weight: 700;
 
       h2 {
@@ -95,6 +98,14 @@
 
       p {
         margin: 0 0 8px 0;
+      }
+    }
+
+    img {
+      width: 360px;
+
+      @media screen and (max-width: $screen-sm) {
+        width: 40%;
       }
     }
   }
@@ -125,12 +136,15 @@
       border-radius: 16px;
       background: $white;
 
+      @media screen and (max-width: $screen-sm) {
+        gap: 24px;
+      }
+
       .text {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 24px;
-        flex: 1 0 0;
 
         h3 {
           font-size: 24px;
@@ -139,6 +153,14 @@
         p {
           margin: 0 0 8px 0;
           text-align: left;
+        }
+      }
+
+      img {
+        width: 360px;
+
+        @media screen and (max-width: $screen-sm) {
+          width: 40%;
         }
       }
 

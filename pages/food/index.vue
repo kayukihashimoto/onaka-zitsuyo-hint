@@ -62,7 +62,7 @@
           <div class="title">
             <h4>実用ヒント③</h4>
             <h3>
-              無理に食べない
+              無理に食べない<br class="is-sp"><br class="is-sp">
             </h3>
           </div>
 
@@ -120,12 +120,15 @@
     border-radius: 16px;
     background: $white;
 
+    @media screen and (max-width: $screen-sm) {
+      gap: 24px;
+    }
+
     .text {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 24px;
-      flex: 1 0 0;
       font-weight: 700;
 
       h2 {
@@ -134,6 +137,14 @@
 
       p {
         margin: 0 0 8px 0;
+      }
+    }
+
+    img {
+      width: 360px;
+
+      @media screen and (max-width: $screen-sm) {
+        width: 40%;
       }
     }
   }
@@ -161,7 +172,6 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      flex: 1 0 0;
       border-radius: 16px;
       background: $white;
 
@@ -177,6 +187,10 @@
           font-size: 16px;
           line-height: 1.5;
         }
+      }
+
+      img {
+        width: 100%;
       }
     }
   }

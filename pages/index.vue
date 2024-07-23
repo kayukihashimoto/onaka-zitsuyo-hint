@@ -11,13 +11,13 @@
           </div>
           <div class="images__item--main">
             <span>
-              食事をすると下痢をする
+              食事をすると<br class="is-sp">下痢をする
             </span>
             <img src="@/assets/images/geri.png" width="200">
           </div>
           <div class="images__item">
             <span>
-              おなかがゴロゴロしてる
+              おなかが<br class="is-sp">ゴロゴロしてる
             </span>
             <img src="@/assets/images/gorogoro.png" width="160">
           </div>
@@ -29,9 +29,9 @@
         </h1>
         <p>
           みんなと同じ食事をしているのに自分だけおなかの調子がよくない。<br>
-          食物アレルギーの検査をしても問題ない。おなかの不調が気になって、せっかくの食事を楽しめない。 <br><br>
+          食物アレルギーの検査をしても問題ない。<br class="is-sp">おなかの不調が気になって、せっかくの食事を楽しめない。 <br><br>
 
-          このページに訪れたあなたも、もしかするとおなかの不調に悩んでいるのかもしれません。<br>
+          このページに訪れたあなたも、<br class="is-sp">もしかするとおなかの不調に悩んでいるのかもしれません。<br>
           おなかの不調を見逃さず、まずは自分のからだを見つめ直してみませんか？
         </p>
       </div>
@@ -147,7 +147,6 @@
 <style lang="scss" scoped>
 .kv {
   display: flex;
-  height: 720px;
   padding: 0px 40px 40px 40px;
   flex-direction: column;
   background: $secondary;
@@ -156,12 +155,11 @@
 
   &__content {
     display: flex;
-    padding: 24px 40px;
+    padding: 56px 40px;
     justify-content: center;
     align-items: center;
     align-content: center;
     gap: 32px 0px;
-    flex: 1 0 0;
     flex-direction: column;
     background: $white;
 
@@ -180,7 +178,7 @@
         span {
           text-align: center;
           font-weight: 900;
-          line-height: 1;
+          line-height: 1.4;
           letter-spacing: .03em;
         }
 
@@ -198,6 +196,7 @@
       text-align: center;
       font-size: 40px;
       line-height: 1.5;
+      font-weight: 900;
     }
 
     p {
@@ -228,12 +227,15 @@
     border-radius: 16px;
     background: $white;
 
+    @media screen and (max-width: $screen-sm) {
+      gap: 24px;
+    }
+
     .text {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 24px;
-      flex: 1 0 0;
 
       h2 {
         font-size: 32px;
@@ -242,6 +244,16 @@
       p {
         margin: 0 0 8px 0;
       }
+    }
+  }
+
+
+
+  img {
+    width: 360px;
+
+    @media screen and (max-width: $screen-sm) {
+      width: 40%;
     }
   }
 }
@@ -288,12 +300,15 @@
       border-radius: 16px;
       background: $white;
 
+      @media screen and (max-width: $screen-sm) {
+        gap: 24px;
+      }
+
       .text {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 24px;
-        flex: 1 0 0;
 
         h3 {
           font-size: 24px;
@@ -301,6 +316,14 @@
 
         p {
           margin: 0 0 8px 0;
+        }
+      }
+
+      img {
+        width: 360px;
+
+        @media screen and (max-width: $screen-sm) {
+          width: 40%;
         }
       }
 
@@ -370,7 +393,6 @@
           font-size: 10px;
           color: $link;
           font-weight: 500;
-
 
           svg {
             margin: 0 0 -4px;
