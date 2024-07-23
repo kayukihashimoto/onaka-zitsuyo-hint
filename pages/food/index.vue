@@ -16,7 +16,7 @@
           </p>
         </div>
 
-        <img src="@/assets/images/food.png" width="360">
+        <img src="@/assets/images/food.webp" width="360">
       </div>
     </section>
 
@@ -31,7 +31,7 @@
           </div>
 
 
-          <img src="@/assets/images/hint/1.png" width="360">
+          <img src="@/assets/images/hint/1.webp" width="360">
 
           <p>
             毎日、その日に食べたものとおなかの調子を記録します。<br><br>
@@ -48,7 +48,7 @@
             </h3>
           </div>
 
-          <img src="@/assets/images/hint/2.png" width="360">
+          <img src="@/assets/images/hint/2.webp" width="360">
 
           <p>
             普段の食事とおなかの調子の記録から、自分に合わない食べ物がわかってきたところで、次はおなかを壊しにくい食べ物について調べました。<br><br>
@@ -66,7 +66,7 @@
             </h3>
           </div>
 
-          <img src="@/assets/images/hint/3.png" width="360">
+          <img src="@/assets/images/hint/3.webp" width="360">
 
           <p>
             外出先で人と食事する際、どうしても自分には合わない食べ物が出ることがあります。<br><br>
@@ -85,7 +85,7 @@
             </h3>
           </div>
 
-          <img src="@/assets/images/hint/4.png" width="360">
+          <img src="@/assets/images/hint/4.webp" width="360">
 
           <p>
             自分に合わない食べ物＝嫌いな食べ物、というわけではありません。<br>

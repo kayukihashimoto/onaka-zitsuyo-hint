@@ -14,7 +14,7 @@
           </p>
         </div>
 
-        <img src="@/assets/images/fucyo.png" width="360">
+        <img src="@/assets/images/fucyo.webp" width="360">
       </div>
     </section>
 
@@ -35,7 +35,7 @@
             </p>
           </div>
 
-          <img src="@/assets/images/fucyo/onaka.png" width="360">
+          <img src="@/assets/images/fucyo/onaka.webp" width="360">
         </section>
 
         <section class="fucyo-item--reverse">
@@ -55,7 +55,7 @@
             </p>
           </div>
 
-          <img src="@/assets/images/fucyo/kokoro.png" width="360">
+          <img src="@/assets/images/fucyo/kokoro.webp" width="360">
         </section>
       </div>
     </section>
