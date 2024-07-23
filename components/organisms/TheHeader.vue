@@ -12,6 +12,12 @@ function toggleDrawer() {
   isOpen.value = !isOpen.value
 }
 
+function updateWindow() {
+  if (window.innerWidth > 768) {
+    isOpen.value = false
+  }
+}
+
 // メニューが開いているときはスクロールを禁止する
 watch(isOpen, (newVal) => {
   if (newVal) {
@@ -23,7 +29,16 @@ watch(isOpen, (newVal) => {
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
+  window.addEventListener('resize', () => {
+    updateWindow()
+  })
 });
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', () => {
+    updateWindow()
+  })
+})
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
