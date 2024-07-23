@@ -10,7 +10,7 @@ useHead({
       <div class="kv__content">
         <div class="text">
           <h2>
-            こころの<br class="is-sp">ケアをする
+            こころの<br class="is-sp is-md">ケアをする
           </h2>
 
           <img src="@/assets/images/care.webp" width="360" class="is-sp">
