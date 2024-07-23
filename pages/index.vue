@@ -5,19 +5,19 @@
         <div class="images">
           <div class="images__item">
             <span class="is-pc">
-              おなかが張っている
+              おなかが<br class="is-md">張っている
             </span>
             <img src="@/assets/images/hari.webp" width="160">
           </div>
           <div class="images__item--main">
             <span class="is-pc">
-              食事をすると<br class="is-sp">下痢をする
+              食事をすると<br class="is-md">下痢をする
             </span>
             <img src="@/assets/images/geri.webp" width="200">
           </div>
           <div class="images__item">
             <span class="is-pc">
-              おなかが<br class="is-sp">ゴロゴロしてる
+              おなかが<br class="is-md">ゴロゴロしてる
             </span>
             <img src="@/assets/images/gorogoro.webp" width="160">
           </div>
@@ -183,6 +183,10 @@
       align-items: flex-end;
       gap: 60px;
 
+      @media screen and (max-width: $screen-md) {
+        gap: 32px;
+      }
+
       @media screen and (max-width: $screen-sm) {
         gap: 16px;
       }
@@ -203,6 +207,10 @@
         img {
           width: 160px;
 
+          @media screen and (max-width: $screen-md) {
+            width: 120px;
+          }
+
           @media screen and (max-width: $screen-sm) {
             width: 80px;
           }
@@ -217,6 +225,10 @@
 
           img {
             width: 200px;
+
+            @media screen and (max-width: $screen-md) {
+              width: 160px;
+            }
 
             @media screen and (max-width: $screen-sm) {
               width: 100px;
@@ -299,6 +311,10 @@
   img {
     width: 360px;
 
+    @media screen and (max-width: $screen-md) {
+      width: 40%;
+    }
+
     @media screen and (max-width: $screen-sm) {
       width: 100%;
     }
@@ -379,6 +395,10 @@
 
       img {
         width: 360px;
+
+        @media screen and (max-width: $screen-md) {
+          width: 40%;
+        }
 
         @media screen and (max-width: $screen-sm) {
           width: 100%;

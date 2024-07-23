@@ -64,7 +64,7 @@
           <div class="title">
             <h4>実用ヒント③</h4>
             <h3>
-              無理に食べない<br class="is-sp"><br class="is-sp">
+              無理に食べない<br class="is-md"><br class="is-md">
             </h3>
           </div>
 
@@ -157,6 +157,10 @@
 
     img {
       width: 360px;
+
+      @media screen and (max-width: $screen-md) {
+        width: 40%;
+      }
 
       @media screen and (max-width: $screen-sm) {
         width: 100%;

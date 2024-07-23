@@ -165,6 +165,10 @@
     img {
       width: 360px;
 
+      @media screen and (max-width: $screen-md) {
+        width: 40%;
+      }
+
       @media screen and (max-width: $screen-sm) {
         width: 100%;
       }

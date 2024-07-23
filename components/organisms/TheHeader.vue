@@ -30,13 +30,11 @@ onUnmounted(() => {
       </NuxtLink>
     </h1>
 
-    <MoleculesGlobalNavigation class="is-pc" />
+    <MoleculesGlobalNavigation />
 
-    <div class="is-sp">
-      <button @click="toggleDrawer">
-        <AtomsMenuIcon />
-      </button>
-    </div>
+    <button class="menu-button" @click="toggleDrawer">
+      <AtomsMenuIcon />
+    </button>
 
     <OrganismsNavigationDrawer :is-open="isOpen" @close="toggleDrawer" />
 
@@ -72,11 +70,16 @@ header {
     }
   }
 
-  button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .menu-button {
+    display: none;
     padding: 12px;
+
+    @media screen and (max-width: $screen-md) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
   }
 
   &.shadow {
@@ -97,6 +100,5 @@ header {
       background: $bark-blue54;
     }
   }
-
 }
 </style>
