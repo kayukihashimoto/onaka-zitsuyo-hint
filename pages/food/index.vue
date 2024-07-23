@@ -64,7 +64,7 @@
           <div class="title">
             <h4>実用ヒント③</h4>
             <h3>
-              無理に食べない<br class="is-md"><br class="is-md">
+              無理に食べない
             </h3>
           </div>
 
@@ -83,7 +83,7 @@
           <div class="title">
             <h4>実用ヒント④</h4>
             <h3>
-              さらなるからだと<br class="is-sp">こころの不調
+              さらなるからだとこころの不調
             </h3>
           </div>
 
@@ -149,10 +149,6 @@
           text-align: center;
         }
       }
-
-      p {
-        margin: 0 0 8px 0;
-      }
     }
 
     img {
@@ -178,7 +174,7 @@
   background: $gray;
 
   @media screen and (max-width: $screen-sm) {
-    padding: 80px 16px;
+    padding: 40px 16px;
   }
 
   &__content {
@@ -200,8 +196,7 @@
 
       @media screen and (max-width: $screen-sm) {
         width: 100%;
-        padding: 80px 16px;
-        align-items: center;
+        padding: 40px 24px;
       }
 
       .title {
