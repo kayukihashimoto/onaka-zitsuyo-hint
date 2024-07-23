@@ -15,21 +15,29 @@
 </template>
 
 <style lang="scss" scoped>
-ul {
-  display: flex;
-  justify-content: flex-end;
-  gap: 8px;
+nav {
+  display: block;
 
-  li {
-    a {
-      display: flex;
-      padding: 10px 8px;
-      justify-content: flex-end;
-      font-size: 14px;
-      transition: .3s;
+  @media screen and (max-width: $screen-md) {
+    display: none;
+  }
 
-      &:hover {
-        opacity: .56;
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+
+    li {
+      a {
+        display: flex;
+        padding: 10px 8px;
+        justify-content: flex-end;
+        font-size: 14px;
+        transition: .3s;
+
+        &:hover {
+          opacity: .56;
+        }
       }
     }
   }

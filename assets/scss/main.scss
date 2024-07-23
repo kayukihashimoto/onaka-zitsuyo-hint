@@ -85,7 +85,17 @@ h3 {
 
 .is-pc {
   display: block;
+
   @media screen and (max-width: $screen-sm) {
     display: none;
   }
 }
+
+.is-md {
+  display: none;
+  @media screen and (max-width: $screen-md) {
+    display: block;
+  }
+}
+
+
