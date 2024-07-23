@@ -19,6 +19,10 @@ body {
 
 body {
   min-width: $screen-sm;
+
+  @media screen and (max-width: $screen-sm) {
+    min-width: initial;
+  }
 }
 
 ul,
