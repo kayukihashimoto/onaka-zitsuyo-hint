@@ -72,13 +72,17 @@ header {
   width: 100%;
   height: 80px;
   background: $secondary;
-  padding: 16px 16px 16px 24px;
+  padding: 0 16px 0 24px;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   transition: .3s;
   z-index: 4; // ヘッダーを最前面に表示
+
+  @media screen and (max-width: $screen-sm) {
+    height: 64px;
+  }
 
   h1 {
     font-size: 12px;
