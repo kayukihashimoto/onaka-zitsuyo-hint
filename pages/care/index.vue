@@ -4,8 +4,10 @@
       <div class="kv__content">
         <div class="text">
           <h2>
-            こころのケアをする
+            こころの<br class="is-sp">ケアをする
           </h2>
+
+          <img src="@/assets/images/care.webp" width="360" class="is-sp">
 
           <p>
             おなかの不調がこころの健康にも影響することを体験したことから、「こころのケア」を普段の生活に取り入れました。まずは病院に行き、適切な処置とアドバイスを受けました。<br><br>
@@ -16,13 +18,13 @@
           </p>
         </div>
 
-        <img src="@/assets/images/care.webp" width="360">
+        <img src="@/assets/images/care.webp" width="360" class="is-pc">
       </div>
     </section>
 
-    <section class="care">
-      <div class="care__content">
-        <section class="care--item">
+    <section class="hint">
+      <div class="hint__content">
+        <section class="hint--item">
           <div class="title">
             <h4>実用ヒント①</h4>
             <h3>
@@ -45,7 +47,7 @@
           </p>
         </section>
 
-        <section class="care--item">
+        <section class="hint--item">
           <div class="title">
             <h4>実用ヒント②</h4>
             <h3>
@@ -65,7 +67,7 @@
           </p>
         </section>
 
-        <section class="care--item">
+        <section class="hint--item">
           <div class="title">
             <h4>実用ヒント③</h4>
             <h3>
@@ -85,7 +87,7 @@
           </p>
         </section>
 
-        <section class="care--item">
+        <section class="hint--item">
           <div class="title">
             <h4>実用ヒント④</h4>
             <h3>
@@ -117,6 +119,10 @@
   align-items: center;
   gap: 10px;
 
+  @media screen and (max-width: $screen-sm) {
+    padding: 0px 16px 40px 16px;
+  }
+
   &__content {
     display: flex;
     width: 100%;
@@ -128,6 +134,7 @@
     background: $white;
 
     @media screen and (max-width: $screen-sm) {
+      padding: 56px 24px;
       gap: 24px;
     }
 
@@ -138,8 +145,16 @@
       gap: 24px;
       font-weight: 700;
 
+      @media screen and (max-width: $screen-sm) {
+        align-items: center;
+      }
+
       h2 {
         font-size: 32px;
+
+        @media screen and (max-width: $screen-sm) {
+          text-align: center;
+        }
       }
 
       p {
@@ -151,19 +166,23 @@
       width: 360px;
 
       @media screen and (max-width: $screen-sm) {
-        width: 40%;
+        width: 100%;
       }
     }
   }
 }
 
-.care {
+.hint {
   display: flex;
   padding: 80px 40px;
   flex-direction: column;
   align-items: center;
   align-self: stretch;
   background: $gray;
+
+  @media screen and (max-width: $screen-sm) {
+    padding: 80px 16px;
+  }
 
   &__content {
     width: 100%;
@@ -172,7 +191,7 @@
     flex-wrap: wrap;
     gap: 40px;
 
-    .care--item {
+    .hint--item {
       display: flex;
       width: calc((100% - 40px) / 2);
       padding: 60px;
@@ -181,6 +200,12 @@
       align-items: flex-start;
       border-radius: 16px;
       background: $white;
+
+      @media screen and (max-width: $screen-sm) {
+        width: 100%;
+        padding: 80px 16px;
+        align-items: center;
+      }
 
       .title {
         font-weight: 900;

@@ -4,8 +4,10 @@
       <div class="kv__content">
         <div class="text">
           <h2>
-            自分に合う食べ物を知る
+            自分に合う<br class="is-sp">食べ物を知る
           </h2>
+
+          <img src="@/assets/images/food.webp" width="360" class="is-sp">
 
           <p>
             おなかの不調をきっかけに、まずは自分に合う食べ物について知ることからはじめました。<br><br>
@@ -16,7 +18,7 @@
           </p>
         </div>
 
-        <img src="@/assets/images/food.webp" width="360">
+        <img src="@/assets/images/food.webp" width="360" class="is-pc">
       </div>
     </section>
 
@@ -81,7 +83,7 @@
           <div class="title">
             <h4>実用ヒント④</h4>
             <h3>
-              さらなるからだとこころの不調
+              さらなるからだと<br class="is-sp">こころの不調
             </h3>
           </div>
 
@@ -110,6 +112,10 @@
   align-items: center;
   gap: 10px;
 
+  @media screen and (max-width: $screen-sm) {
+    padding: 0px 16px 40px 16px;
+  }
+
   &__content {
     display: flex;
     width: 100%;
@@ -121,6 +127,7 @@
     background: $white;
 
     @media screen and (max-width: $screen-sm) {
+      padding: 56px 24px;
       gap: 24px;
     }
 
@@ -131,8 +138,16 @@
       gap: 24px;
       font-weight: 700;
 
+      @media screen and (max-width: $screen-sm) {
+        align-items: center;
+      }
+
       h2 {
         font-size: 32px;
+
+        @media screen and (max-width: $screen-sm) {
+          text-align: center;
+        }
       }
 
       p {
@@ -144,7 +159,7 @@
       width: 360px;
 
       @media screen and (max-width: $screen-sm) {
-        width: 40%;
+        width: 100%;
       }
     }
   }
@@ -157,6 +172,10 @@
   align-items: center;
   align-self: stretch;
   background: $gray;
+
+  @media screen and (max-width: $screen-sm) {
+    padding: 80px 16px;
+  }
 
   &__content {
     width: 100%;
@@ -174,6 +193,12 @@
       align-items: flex-start;
       border-radius: 16px;
       background: $white;
+
+      @media screen and (max-width: $screen-sm) {
+        width: 100%;
+        padding: 80px 16px;
+        align-items: center;
+      }
 
       .title {
         font-weight: 900;

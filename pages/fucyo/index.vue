@@ -7,6 +7,8 @@
             おなかの不調？
           </h2>
 
+          <img src="@/assets/images/fucyo.webp" width="360" class="is-sp">
+
           <p>
             私は元々おなかの調子が悪く、下痢や便秘を交互に繰り返していました。症状は悪化し、からだだけでなく、こころまでも壊してしまい、食事を楽しむことはもちろん、外出することも大変な日々を過ごしていました。<br><br>
 
@@ -14,7 +16,7 @@
           </p>
         </div>
 
-        <img src="@/assets/images/fucyo.webp" width="360">
+        <img src="@/assets/images/fucyo.webp" width="360" class="is-pc">
       </div>
     </section>
 
@@ -26,6 +28,8 @@
               不調の悪化
             </h3>
 
+            <img src="@/assets/images/fucyo/onaka.webp" width="360" class="is-sp">
+
             <p>
               ある日、外食後に電車で家に帰る途中、突然の下痢に襲われました。何度も電車を降りてトイレに駆け込み、貧血のような症状もありました。それから下痢は10日以上も続き、何を食べてもすぐに排出してしまうので病院へ行きました。<br><br>
 
@@ -35,14 +39,16 @@
             </p>
           </div>
 
-          <img src="@/assets/images/fucyo/onaka.webp" width="360">
+          <img src="@/assets/images/fucyo/onaka.webp" width="360" class="is-pc">
         </section>
 
         <section class="fucyo-item--reverse">
           <div class="text">
             <h3>
-              さらなるからだとこころの不調
+              さらなるからだと<br class="is-sp">こころの不調
             </h3>
+
+            <img src="@/assets/images/fucyo/kokoro.webp" width="360" class="is-sp">
 
             <p>
               おなかの不調や過去のトラウマから、突然電車に乗ると手足が痺れ、呼吸が浅くなり、貧血のような症状が出るようになりました。<br><br>
@@ -55,7 +61,7 @@
             </p>
           </div>
 
-          <img src="@/assets/images/fucyo/kokoro.webp" width="360">
+          <img src="@/assets/images/fucyo/kokoro.webp" width="360" class="is-pc">
         </section>
       </div>
     </section>
@@ -71,6 +77,10 @@
   align-items: center;
   gap: 10px;
 
+  @media screen and (max-width: $screen-sm) {
+    padding: 0px 16px 40px 16px;
+  }
+
   &__content {
     display: flex;
     width: 100%;
@@ -82,6 +92,7 @@
     background: $white;
 
     @media screen and (max-width: $screen-sm) {
+      padding: 56px 24px;
       gap: 24px;
     }
 
@@ -91,6 +102,10 @@
       align-items: flex-start;
       gap: 24px;
       font-weight: 700;
+
+      @media screen and (max-width: $screen-sm) {
+        align-items: center;
+      }
 
       h2 {
         font-size: 32px;
@@ -105,7 +120,7 @@
       width: 360px;
 
       @media screen and (max-width: $screen-sm) {
-        width: 40%;
+        width: 100%;
       }
     }
   }
@@ -118,6 +133,10 @@
   align-items: center;
   align-self: stretch;
   background: $gray;
+
+  @media screen and (max-width: $screen-sm) {
+    padding: 80px 16px;
+  }
 
   &__content {
     width: 100%;
@@ -137,6 +156,7 @@
       background: $white;
 
       @media screen and (max-width: $screen-sm) {
+        padding: 60px 24px;
         gap: 24px;
       }
 
@@ -145,6 +165,10 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 24px;
+
+        @media screen and (max-width: $screen-sm) {
+          align-items: center;
+        }
 
         h3 {
           font-size: 24px;
@@ -160,13 +184,19 @@
         width: 360px;
 
         @media screen and (max-width: $screen-sm) {
-          width: 40%;
+          width: 100%;
         }
       }
 
       &--reverse {
         @extend .fucyo-item;
         flex-direction: row-reverse;
+
+        .text {
+          h3 {
+            text-align: center;
+          }
+        }
       }
     }
   }
