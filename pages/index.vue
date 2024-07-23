@@ -4,19 +4,19 @@
       <div class="kv__content">
         <div class="images">
           <div class="images__item">
-            <span>
+            <span class="is-pc">
               おなかが張っている
             </span>
             <img src="@/assets/images/hari.webp" width="160">
           </div>
           <div class="images__item--main">
-            <span>
+            <span class="is-pc">
               食事をすると<br class="is-sp">下痢をする
             </span>
             <img src="@/assets/images/geri.webp" width="200">
           </div>
           <div class="images__item">
-            <span>
+            <span class="is-pc">
               おなかが<br class="is-sp">ゴロゴロしてる
             </span>
             <img src="@/assets/images/gorogoro.webp" width="160">
@@ -28,11 +28,11 @@
           きちんと向き合っていますか？
         </h1>
         <p>
-          みんなと同じ食事をしているのに自分だけおなかの調子がよくない。<br>
-          食物アレルギーの検査をしても問題ない。<br class="is-sp">おなかの不調が気になって、せっかくの食事を楽しめない。 <br><br>
+          みんなと同じ食事をしているのに<br class="is-sp">自分だけおなかの調子がよくない。<br>
+          食物アレルギーの<br class="is-sp">検査をしても問題ない。<br class="is-sp">おなかの不調が気になって、<br class="is-sp">せっかくの食事を楽しめない。 <br><br>
 
-          このページに訪れたあなたも、<br class="is-sp">もしかするとおなかの不調に悩んでいるのかもしれません。<br>
-          おなかの不調を見逃さず、まずは自分のからだを見つめ直してみませんか？
+          このページに訪れたあなたも、<br class="is-sp">もしかするとおなかの不調に<br class="is-sp">悩んでいるのかもしれません。<br>
+          おなかの不調を見逃さず、<br class="is-sp">まずは自分のからだを<br class="is-sp">見つめ直してみませんか？
         </p>
       </div>
     </section>
@@ -44,6 +44,8 @@
             おなかの不調？
           </h2>
 
+          <img src="@/assets/images/fucyo.webp" width="360" class="is-sp">
+
           <p>
             私は元々おなかの調子が悪く、下痢や便秘を交互に繰り返していました。症状は悪化し、からだだけでなく、こころまでも壊してしまい、食事を楽しむことはもちろん、外出することも大変な日々を過ごしていました。このページでは、私が体験したおなかの不調とこころの不調についてお話します。
           </p>
@@ -51,7 +53,7 @@
           <AtomsButton to="/fucyo" />
         </div>
 
-        <img src="@/assets/images/fucyo.webp" width="360">
+        <img src="@/assets/images/fucyo.webp" width="360" class="is-pc">
       </div>
     </section>
 
@@ -59,12 +61,12 @@
       <div class="hint__content">
         <div class="title">
           <h2>
-            不調と向き合うわたしの実用ヒント
+            不調と向き合う<br class="is-sp">わたしの実用ヒント
           </h2>
 
           <p>
             今は薬を飲みながら治療中ですが、<br>
-            電車に乗って移動し、外出先で食事もできるようになりました。<br><br>
+            電車に乗って移動し、<br class="is-sp">外出先で食事もできるようになりました。<br><br>
 
             私なりに問題に対処した具体的な克服方法や工夫した実用的なヒントを紹介します。
           </p>
@@ -76,6 +78,8 @@
               自分に合う食べ物を知る
             </h3>
 
+            <img src="@/assets/images/food.webp" width="360" class="is-sp">
+
             <p>
               おなかの不調をきっかけに、自分に合う食べ物を見つけるために食事記録をはじめました。毎日の食べ物とおなかの調子を記録しながら、自分に合う・合わない食べ物を見つける実用的なヒントを紹介します。
             </p>
@@ -83,7 +87,7 @@
             <AtomsButton to="/food" label="実用ヒントをくわしく見る" />
           </div>
 
-          <img src="@/assets/images/food.webp" width="360">
+          <img src="@/assets/images/food.webp" width="360" class="is-pc">
         </section>
 
         <section class="hint-item--reverse">
@@ -92,6 +96,8 @@
               こころのケアをする
             </h3>
 
+            <img src="@/assets/images/care.webp" width="360" class="is-sp">
+
             <p>
               おなかの不調がこころの健康にも影響することを体験し、「こころのケア」を生活に取り入れました。適切な医療処置とアドバイスを受け、無理をしないことや薬を活用することで、外出先での食事を楽しむ方法を紹介します。
             </p>
@@ -99,7 +105,7 @@
             <AtomsButton to="/care" label="実用ヒントをくわしく見る" />
           </div>
 
-          <img src="@/assets/images/care.webp" width="360">
+          <img src="@/assets/images/care.webp" width="360" class="is-pc">
         </section>
       </div>
     </section>
@@ -112,7 +118,7 @@
           </h2>
 
           <p>
-            本ウェブサイトの情報は個人的な情報提供を目的としており、<br>
+            本ウェブサイトの情報は個人的な情報提供を目的としており、<br class="is-pc">
             医学的アドバイスを代替するものではありません。<br>
             症状や健康上の懸念がある場合は、必ず医療専門家に相談してください。
           </p>
@@ -153,6 +159,10 @@
   position: relative;
   z-index: 3;
 
+  @media screen and (max-width: $screen-sm) {
+    padding: 0px 16px 40px 16px;
+  }
+
   &__content {
     display: flex;
     padding: 56px 40px;
@@ -163,11 +173,19 @@
     flex-direction: column;
     background: $white;
 
+    @media screen and (max-width: $screen-sm) {
+      padding: 56px 24px;
+    }
+
     .images {
       display: flex;
       justify-content: center;
       align-items: flex-end;
       gap: 60px;
+
+      @media screen and (max-width: $screen-sm) {
+        gap: 16px;
+      }
 
       &__item {
         display: flex;
@@ -182,11 +200,27 @@
           letter-spacing: .03em;
         }
 
+        img {
+          width: 160px;
+
+          @media screen and (max-width: $screen-sm) {
+            width: 80px;
+          }
+        }
+
         &--main {
           @extend .images__item;
 
           span {
             font-size: 20px;
+          }
+
+          img {
+            width: 200px;
+
+            @media screen and (max-width: $screen-sm) {
+              width: 100px;
+            }
           }
         }
       }
@@ -197,6 +231,10 @@
       font-size: 40px;
       line-height: 1.5;
       font-weight: 900;
+
+      @media screen and (max-width: $screen-sm) {
+        font-size: 32px;
+      }
     }
 
     p {
@@ -217,6 +255,10 @@
   position: relative;
   z-index: 2;
 
+  @media screen and (max-width: $screen-sm) {
+    padding: 160px 16px 80px;
+  }
+
   &__content {
     width: 100%;
     max-width: 1000px;
@@ -228,6 +270,7 @@
     background: $white;
 
     @media screen and (max-width: $screen-sm) {
+      padding: 60px 24px;
       gap: 24px;
     }
 
@@ -236,6 +279,10 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 24px;
+
+      @media screen and (max-width: $screen-sm) {
+        align-items: center;
+      }
 
       h2 {
         font-size: 32px;
@@ -253,7 +300,7 @@
     width: 360px;
 
     @media screen and (max-width: $screen-sm) {
-      width: 40%;
+      width: 100%;
     }
   }
 }
@@ -267,6 +314,10 @@
   background: $secondary;
   position: relative;
   z-index: 1;
+
+  @media screen and (max-width: $screen-sm) {
+    padding: 160px 16px 80px;
+  }
 
   &__content {
     width: 100%;
@@ -284,6 +335,7 @@
 
       h2 {
         font-size: 32px;
+        text-align: center;
       }
 
       p {
@@ -301,6 +353,8 @@
       background: $white;
 
       @media screen and (max-width: $screen-sm) {
+        justify-content: center;
+        padding: 60px 24px;
         gap: 24px;
       }
 
@@ -309,6 +363,10 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 24px;
+
+        @media screen and (max-width: $screen-sm) {
+          align-items: center;
+        }
 
         h3 {
           font-size: 24px;
@@ -323,7 +381,7 @@
         width: 360px;
 
         @media screen and (max-width: $screen-sm) {
-          width: 40%;
+          width: 100%;
         }
       }
 
@@ -343,6 +401,10 @@
   align-items: center;
   gap: 56px;
   background: $gray;
+
+  @media screen and (max-width: $screen-sm) {
+    padding: 160px 16px 80px;
+  }
 
   &__content {
     width: 100%;
@@ -365,6 +427,10 @@
 
       p {
         text-align: center;
+
+        @media screen and (max-width: $screen-sm) {
+          text-align: left;
+        }
       }
     }
 
@@ -378,6 +444,10 @@
       border: 1px solid $bark-blue38;
       background: $white87;
       color: $bark-blue54;
+
+      @media screen and (max-width: $screen-sm) {
+        padding: 40px 16px;
+      }
 
       h2 {
         font-size: 14px;
