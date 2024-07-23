@@ -10,7 +10,7 @@ useHead({
       <div class="kv__content">
         <div class="text">
           <h2>
-            自分に合う<br class="is-sp">食べ物を知る
+            自分に合う<br class="is-sp is-md">食べ物を知る
           </h2>
 
           <img src="@/assets/images/food.webp" width="360" class="is-sp">
