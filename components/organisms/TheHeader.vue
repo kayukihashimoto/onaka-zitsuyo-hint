@@ -1,10 +1,16 @@
 <script setup lang="ts">
 // ヘッダーに影を付けるかどうかのフラグ
 const hasShadow = ref(false);
+// メニュー」ボタンの開閉フラグ
+const isOpen = ref(false)
 
-const handleScroll = () => {
+function handleScroll() {
   hasShadow.value = window.scrollY > 60;
 };
+
+function toggleDrawer() {
+  isOpen.value = !isOpen.value
+}
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
@@ -24,7 +30,17 @@ onUnmounted(() => {
       </NuxtLink>
     </h1>
 
-    <MoleculesGlobalNavigation />
+    <MoleculesGlobalNavigation class="is-pc" />
+
+    <div class="is-sp">
+      <button @click="toggleDrawer">
+        <AtomsMenuIcon />
+      </button>
+    </div>
+
+    <OrganismsNavigationDrawer :is-open="isOpen" @close="toggleDrawer" />
+
+    <div :class="{ 'is-open': isOpen }" class="overlay" />
   </header>
 </template>
 
@@ -56,8 +72,31 @@ header {
     }
   }
 
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+  }
+
   &.shadow {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+
+  .overlay {
+    display: none;
+
+    &.is-open {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100svh;
+      background: $bark-blue54;
+    }
+  }
+
 }
 </style>
