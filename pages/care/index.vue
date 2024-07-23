@@ -16,7 +16,7 @@
           </p>
         </div>
 
-        <img src="@/assets/images/care.png" width="360">
+        <img src="@/assets/images/care.webp" width="360">
       </div>
     </section>
 
@@ -31,7 +31,7 @@
           </div>
 
 
-          <img src="@/assets/images/care/1.png" width="360">
+          <img src="@/assets/images/care/1.webp" width="360">
 
           <p>
             外出時に動悸や呼吸困難などの症状が出そうだなと感じたら、まずは深呼吸をします。<br><br>
@@ -53,7 +53,7 @@
             </h3>
           </div>
 
-          <img src="@/assets/images/care/2.png" width="360">
+          <img src="@/assets/images/care/2.webp" width="360">
 
           <p>
             深呼吸にフォーカスするだけでは、なかなか落ち着かない時があります。<br>
@@ -73,7 +73,7 @@
             </h3>
           </div>
 
-          <img src="@/assets/images/care/3.png" width="360">
+          <img src="@/assets/images/care/3.webp" width="360">
 
           <p>
             外出したり、外出先で食事ができたり、今まで困難だったことがひとつでもできたら、徹底的に自分を褒めてあげます。<br><br>
@@ -93,7 +93,7 @@
             </h3>
           </div>
 
-          <img src="@/assets/images/care/4.png" width="360">
+          <img src="@/assets/images/care/4.webp" width="360">
 
           <p>
             外出する時に思うのは、「おなかが痛くなったらどうしよう？」「トイレがなかったらどうしよう？」と楽しみよりも不安が先にきていました。<br><br>

@@ -7,19 +7,19 @@
             <span>
               おなかが張っている
             </span>
-            <img src="@/assets/images/hari.png" width="160">
+            <img src="@/assets/images/hari.webp" width="160">
           </div>
           <div class="images__item--main">
             <span>
               食事をすると<br class="is-sp">下痢をする
             </span>
-            <img src="@/assets/images/geri.png" width="200">
+            <img src="@/assets/images/geri.webp" width="200">
           </div>
           <div class="images__item">
             <span>
               おなかが<br class="is-sp">ゴロゴロしてる
             </span>
-            <img src="@/assets/images/gorogoro.png" width="160">
+            <img src="@/assets/images/gorogoro.webp" width="160">
           </div>
         </div>
 
@@ -51,7 +51,7 @@
           <AtomsButton to="/fucyo" />
         </div>
 
-        <img src="@/assets/images/fucyo.png" width="360">
+        <img src="@/assets/images/fucyo.webp" width="360">
       </div>
     </section>
 
@@ -83,7 +83,7 @@
             <AtomsButton to="/food" label="実用ヒントをくわしく見る" />
           </div>
 
-          <img src="@/assets/images/food.png" width="360">
+          <img src="@/assets/images/food.webp" width="360">
         </section>
 
         <section class="hint-item--reverse">
@@ -99,7 +99,7 @@
             <AtomsButton to="/care" label="実用ヒントをくわしく見る" />
           </div>
 
-          <img src="@/assets/images/care.png" width="360">
+          <img src="@/assets/images/care.webp" width="360">
         </section>
       </div>
     </section>
