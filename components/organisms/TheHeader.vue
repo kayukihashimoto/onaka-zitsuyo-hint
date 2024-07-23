@@ -12,6 +12,15 @@ function toggleDrawer() {
   isOpen.value = !isOpen.value
 }
 
+// メニューが開いているときはスクロールを禁止する
+watch(isOpen, (newVal) => {
+  if (newVal) {
+    document.body.classList.add('no-scroll');
+  } else {
+    document.body.classList.remove('no-scroll');
+  }
+});
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
 });
