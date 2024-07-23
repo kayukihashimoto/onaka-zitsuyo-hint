@@ -24,15 +24,14 @@
         </div>
 
         <h1>
-          おなかの不調、<br>
-          きちんと向き合っていますか？
+          おなかの不調と向き合う<br>わたしの実用ヒント
         </h1>
         <p>
           みんなと同じ食事をしているのに<br class="is-sp">自分だけおなかの調子がよくない。<br>
-          食物アレルギーの<br class="is-sp">検査をしても問題ない。<br class="is-sp">おなかの不調が気になって、<br class="is-sp">せっかくの食事を楽しめない。 <br><br>
+          おなかの不調が気になって、<br class="is-sp">せっかくの食事を楽しめない。
+          <br><br>
 
-          このページに訪れたあなたも、<br class="is-sp">もしかするとおなかの不調に<br class="is-sp">悩んでいるのかもしれません。<br>
-          おなかの不調を見逃さず、<br class="is-sp">まずは自分のからだを<br class="is-sp">見つめ直してみませんか？
+          そんなおなかとこころの不調に<br class="is-sp">悩まされてきた私が、<br>具体的な克服方法や<br class="is-sp">工夫した実用的なヒントを紹介します。
         </p>
       </div>
     </section>
@@ -65,10 +64,11 @@
           </h2>
 
           <p>
-            今は薬を飲みながら治療中ですが、<br>
-            電車に乗って移動し、<br class="is-sp">外出先で食事もできるようになりました。<br><br>
+            長らくおなかとこころの不調に<br class="is-sp">悩まされていましたが、<br>
+            今は薬の治療を受けながら、<br class="is-sp">外出や食事も楽しめるようになりました。<br><br>
 
-            私なりに問題に対処した具体的な克服方法や工夫した実用的なヒントを紹介します。
+            ここからは、私なりに問題に対処した<br class="is-sp">具体的な克服方法や<br>
+            工夫した実用的なヒントを紹介します。
           </p>
         </div>
 
@@ -175,7 +175,8 @@
     background: $white;
 
     @media screen and (max-width: $screen-sm) {
-      padding: 56px 24px;
+      padding: 40px 16px 56px;
+      gap: 24px 0px;
     }
 
     .images {
@@ -246,7 +247,7 @@
       font-weight: 900;
 
       @media screen and (max-width: $screen-sm) {
-        font-size: 32px;
+        font-size: 28px;
       }
     }
 
@@ -269,8 +270,8 @@
   z-index: 2;
 
   @media screen and (max-width: $screen-sm) {
-    margin: -80px 0 0 0;
-    padding: 120px 16px 40px;
+    margin: -64px 0 0 0;
+    padding: 104px 16px 40px;
   }
 
   &__content {
@@ -332,8 +333,8 @@
   z-index: 1;
 
   @media screen and (max-width: $screen-sm) {
-    margin: -80px 0 0 0;
-    padding: 120px 16px 40px;
+    margin: -64px 0 0 0;
+    padding: 104px 16px 40px;
   }
 
   &__content {
@@ -427,8 +428,8 @@
   background: $gray;
 
   @media screen and (max-width: $screen-sm) {
-    margin: -80px 0 0 0;
-    padding: 120px 16px 40px;
+    margin: -64px 0 0 0;
+    padding: 104px 16px 40px;
   }
 
   &__content {
