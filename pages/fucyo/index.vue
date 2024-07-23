@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useHead({
+  title: 'おなかの不調？ - おなかの不調と向き合うわたしの実用ヒント',
+})
+</script>
+
 <template>
   <main>
     <section class="kv">
