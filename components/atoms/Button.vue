@@ -17,7 +17,7 @@ const props = defineProps({
       <span>
         {{ props.label }}
       </span>
-      <AtomsArrowRight />
+      <AtomsArrowRightIcon />
     </NuxtLink>
   </button>
 </template>
