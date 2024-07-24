@@ -48,7 +48,7 @@ onUnmounted(() => {
 <template>
   <header :class="{ 'shadow': hasShadow }">
     <h1>
-      <NuxtLink to="/" ontouchstart="">
+      <NuxtLink to="/">
         おなかの不調と向き合う<br>
         わたしの実用ヒント
       </NuxtLink>

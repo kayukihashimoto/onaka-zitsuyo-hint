@@ -34,8 +34,16 @@ button {
     background: $primary;
     transition: .3s;
 
-    &:hover {
-      background: $primary-hover;
+    @media (hover: hover) {
+      &:hover {
+        background: $primary-hover;
+      }
+    }
+
+    @media (hover: none) {
+      &:active {
+        background: $primary-hover;
+      }
     }
   }
 }

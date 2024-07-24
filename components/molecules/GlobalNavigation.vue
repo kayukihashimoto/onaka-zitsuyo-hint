@@ -35,8 +35,16 @@ nav {
         font-size: 14px;
         transition: .3s;
 
-        &:hover {
-          opacity: .56;
+        @media (hover: hover) {
+          &:hover {
+            opacity: .56;
+          }
+        }
+
+        @media (hover: none) {
+          &:active {
+            opacity: .56;
+          }
         }
       }
     }
