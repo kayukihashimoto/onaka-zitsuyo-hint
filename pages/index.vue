@@ -7,19 +7,25 @@
             <span class="is-pc">
               おなかが<br class="is-md">張っている
             </span>
-            <img src="@/assets/images/hari.webp" sizes="(max-width: 576px) 80px, (max-width: 768px) 120px, 160px">
+            <img src="@/assets/images/hari.webp"
+              srcset="@/assets/images/hari-160.webp 80w, @/assets/images/hari-240.webp 120w, @/assets/images/hari.webp 160w"
+              sizes="(max-width: 576px) 80px, (max-width: 768px) 120px, 160px">
           </div>
           <div class="images__item--main">
             <span class="is-pc">
               食事をすると<br class="is-md">下痢をする
             </span>
-            <img src="@/assets/images/geri.webp" sizes="(max-width: 576px) 80px, (max-width: 768px) 120px, 160px">
+            <img src="@/assets/images/geri.webp"
+              srcset="@/assets/images/geri-200.webp 100w, @/assets/images/geri-320.webp 160w, @/assets/images/geri.webp 400w"
+              sizes="(max-width: 576px) 100px, (max-width: 768px) 160px, 200px">
           </div>
           <div class="images__item">
             <span class="is-pc">
               おなかが<br class="is-md">ゴロゴロしてる
             </span>
-            <img src="@/assets/images/gorogoro.webp" sizes="(max-width: 576px) 80px, (max-width: 768px) 120px, 160px">
+            <img src="@/assets/images/gorogoro.webp"
+              srcset="@/assets/images/gorogoro-160.webp 80w, @/assets/images/gorogoro-240.webp 120w, @/assets/images/gorogoro.webp 160w"
+              sizes="(max-width: 576px) 80px, (max-width: 768px) 120px, 160px">
           </div>
         </div>
 
