@@ -62,7 +62,7 @@ onUnmounted(() => {
 
     <OrganismsNavigationDrawer :is-open="isOpen" @close="toggleDrawer" />
 
-    <div :class="{ 'is-open': isOpen }" class="overlay" />
+    <div :class="{ 'is-open': isOpen }" class="overlay" @click="toggleDrawer" />
   </header>
 </template>
 
