@@ -48,7 +48,7 @@ onUnmounted(() => {
 <template>
   <header :class="{ 'shadow': hasShadow }">
     <h1>
-      <NuxtLink to="/" ontouchstart="">
+      <NuxtLink to="/">
         おなかの不調と向き合う<br>
         わたしの実用ヒント
       </NuxtLink>
@@ -92,7 +92,8 @@ header {
       line-height: 1.7;
       transition: .3s;
 
-      &:hover {
+      &:hover,
+      &:active {
         opacity: .56;
       }
     }
