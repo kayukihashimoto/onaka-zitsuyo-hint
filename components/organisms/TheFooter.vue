@@ -1,7 +1,8 @@
 <template>
   <footer>
     <small>
-      Copyright © 2024 おなかの不調と向き合うわたしの実用ヒント
+      Copyright © 2024 おなかの不調と向き合うわたしの実用ヒント<br>
+      231024 Kayuki Hashimoto
     </small>
   </footer>
 </template>
@@ -19,8 +20,6 @@ footer {
   small {
     text-align: center;
     font-size: 10px;
-    font-weight: 500;
-    line-height: 1;
   }
 }
 </style>
