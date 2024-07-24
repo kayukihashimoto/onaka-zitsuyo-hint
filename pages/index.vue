@@ -7,20 +7,19 @@
             <span class="is-pc">
               おなかが<br class="is-md">張っている
             </span>
-
-            <img src="@/assets/images/hari.webp" sizes="(max-width: 768px) 120px, 160px">
+            <img src="@/assets/images/hari.webp" sizes="(max-width: 576px) 80px, (max-width: 768px) 120px, 160px">
           </div>
           <div class="images__item--main">
             <span class="is-pc">
               食事をすると<br class="is-md">下痢をする
             </span>
-            <img src="@/assets/images/geri.webp" width="200">
+            <img src="@/assets/images/geri.webp" sizes="(max-width: 576px) 80px, (max-width: 768px) 120px, 160px">
           </div>
           <div class="images__item">
             <span class="is-pc">
               おなかが<br class="is-md">ゴロゴロしてる
             </span>
-            <img src="@/assets/images/gorogoro.webp" width="160">
+            <img src="@/assets/images/gorogoro.webp" sizes="(max-width: 576px) 80px, (max-width: 768px) 120px, 160px">
           </div>
         </div>
 
