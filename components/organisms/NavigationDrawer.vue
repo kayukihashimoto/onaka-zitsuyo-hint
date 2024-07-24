@@ -53,6 +53,18 @@ const emits = defineEmits<(
     justify-content: center;
     margin: 16px 0;
     padding: 12px;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: .56;
+      }
+    }
+
+    @media (hover: none) {
+      &:active {
+        opacity: .56;
+      }
+    }
   }
 
   nav ul {

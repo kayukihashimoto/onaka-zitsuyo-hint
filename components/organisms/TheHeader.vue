@@ -114,7 +114,18 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
+    }
 
+    @media (hover: hover) {
+      &:hover {
+        opacity: .56;
+      }
+    }
+
+    @media (hover: none) {
+      &:active {
+        opacity: .56;
+      }
     }
   }
 
