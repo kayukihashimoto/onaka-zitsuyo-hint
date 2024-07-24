@@ -92,7 +92,6 @@ header {
       line-height: 1.7;
       transition: .3s;
 
-      &:hover,
       &:active {
         opacity: .56;
       }
