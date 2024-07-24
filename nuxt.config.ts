@@ -15,7 +15,14 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/eslint"],
+  modules: ["@nuxt/eslint", "@nuxtjs/google-fonts"],
+
+  googleFonts: {
+    families: {
+      "Zen+Kaku+Gothic+New": [500, 700, 900],
+    },
+    display: "swap",
+  },
 
   app: {
     head: {
