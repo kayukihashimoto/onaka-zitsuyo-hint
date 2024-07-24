@@ -67,6 +67,18 @@ const emits = defineEmits<(
         text-decoration: none;
         display: block;
         line-height: 1.7;
+
+        @media (hover: hover) {
+          &:hover {
+            opacity: .56;
+          }
+        }
+
+        @media (hover: none) {
+          &:active {
+            opacity: .56;
+          }
+        }
       }
     }
   }
