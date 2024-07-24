@@ -7,7 +7,8 @@
             <span class="is-pc">
               おなかが<br class="is-md">張っている
             </span>
-            <img src="@/assets/images/hari.webp" width="160">
+
+            <img src="@/assets/images/hari.webp" sizes="(max-width: 768px) 120px, 160px">
           </div>
           <div class="images__item--main">
             <span class="is-pc">
