@@ -22,13 +22,13 @@ const emits = defineEmits<(
     <nav>
       <ul>
         <li>
-          <NuxtLink to="/#fucyo" ontouchstart="" @click.native="emits('close')">おなかの不調？</NuxtLink>
+          <NuxtLink to="/#fucyo" @click.native="emits('close')">おなかの不調？</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/#hint" ontouchstart="" @click.native="emits('close')">不調と向き合うわたしの実用ヒント</NuxtLink>
+          <NuxtLink to="/#hint" @click.native="emits('close')">不調と向き合うわたしの実用ヒント</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/#about" ontouchstart="" @click.native="emits('close')">このサイトについて</NuxtLink>
+          <NuxtLink to="/#about" @click.native="emits('close')">このサイトについて</NuxtLink>
         </li>
       </ul>
     </nav>

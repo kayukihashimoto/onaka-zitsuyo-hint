@@ -13,7 +13,7 @@ const props = defineProps({
 
 <template>
   <button>
-    <NuxtLink :to="props.to" ontouchstart="">
+    <NuxtLink :to="props.to">
       <span>
         {{ props.label }}
       </span>
