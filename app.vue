@@ -43,8 +43,12 @@ useHead({
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'おなかの不調と向き合うわたしの実用ヒント' },
     { name: 'twitter:description', content: 'みんなと同じ食事をしているのに自分だけおなかの調子がよくない。そんな私が克服した具体的な方法や実用的なヒントを紹介します。' },
-    { name: 'twitter:image', content: 'https://onaka-zitsuyo-hint.com/ogp.png' }
-  ]
+    { name: 'twitter:image', content: 'https://onaka-zitsuyo-hint.com/ogp.png' },
+  ],
+  link: [
+    { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+    { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }
+  ],
 })
 </script>
 
