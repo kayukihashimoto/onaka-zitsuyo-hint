@@ -2,7 +2,6 @@
   <footer>
     <small>
       Copyright © 2024 おなかの不調と向き合うわたしの実用ヒント<br>
-      DS231024 Kayuki Hashimoto
     </small>
   </footer>
 </template>
