@@ -2,13 +2,13 @@
   <nav>
     <ul>
       <li>
-        <NuxtLink to="/#fucyo">おなかの不調？</NuxtLink>
+        <NuxtLink to="/fucyo">おなかの不調？</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/#hint">不調と向き合うわたしの実用ヒント</NuxtLink>
+        <NuxtLink to="/food">自分に合う食べ物を知る</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/#about">このサイトについて</NuxtLink>
+        <NuxtLink to="/care">こころのケアをする</NuxtLink>
       </li>
     </ul>
   </nav>
